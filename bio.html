@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<title>Detect shake in phone using Jquery</title>
+<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="jquery.ios-shake.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$.shake({
+callback: function() {
+alert("Please upvote my answer!");
+}
+});
+});
+</script>
+</head>
+<body>
+<div id="content">
+<h1>Detecting Phone shake using jQuery</h1>
+</div>
+<div id="welcome">Shake your phone to get the alert</div>
+</body>
+</html>
